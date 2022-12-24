@@ -2,3 +2,4 @@ xmltodict==0.12.0
 datetime==4.3
 timedelta==0.0.1
 argparse==1.4.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
