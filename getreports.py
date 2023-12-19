@@ -124,8 +124,7 @@ def createReports():
 #
 def cleanup():
 	try:
-		name = os.name
-		if (name == 'nt'):
+		if ((name := os.name) == 'nt'):
 			os.system('del /q VeracodeJavaAPI.jar')
 			os.system('del /q recent_veracode_builds.xml')
 			os.system('del /q recent_veracode_builds.json')
